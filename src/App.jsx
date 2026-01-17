@@ -43,19 +43,20 @@ function App() {
             type="text" 
             className="border-red-400 border-2 p-1 mr-2" 
             name="todo" 
-            placeholder="Todo Name"
+            placeholder="Todo"
             value={formData.todo}
             onChange={handleChange}
              />
           <input 
             type="date" 
             name="date"      
-            className="border-red-400 border-2 p-1 mr-2"
+            className="border-red-400 border-2 p-1 mr-2 ml-2"
+            placeholder="Date"
             value={formData.date}
             onChange={handleChange}
           />
           <button 
-            className="bg-green-500 py-1.5 text-white font-medium text-md px-8 mr-2 rounded-sm"
+            className="bg-green-500 py-1.5 text-white font-medium text-md px-8 ml-2 rounded-sm"
             onClick={handleTodo}
             >Add</button>
         </article>
